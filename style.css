@@ -1401,57 +1401,6 @@ cursor:pointer;
 ========================== */
 
 
-@media(max-width:900px){
-
-
-.story-container{
-
-height:350px;
-
-}
-
-
-.story h3{
-
-font-size:22px;
-
-}
-
-
-.story p{
-
-font-size:16px;
-
-}
-
-
-
-.story-controls label{
-
-width:40px;
-
-height:40px;
-
-font-size:20px;
-
-}
-
-
-.prev{
-
-left:15px;
-
-}
-
-
-.next{
-
-right:15px;
-
-}
-
-
-}
 
 
 
@@ -1701,6 +1650,73 @@ justify-content:center;
 
 }
 
+/*========================
+STORIES
+========================*/
+.story-container{
+
+height:350px;
+
+}
+
+
+.story h3{
+
+font-size:22px;
+
+}
+
+
+.story p{
+
+font-size:16px;
+
+}
+
+
+
+.story-controls label{
+
+width:40px;
+
+height:40px;
+
+font-size:20px;
+
+}
+
+
+.prev{
+
+left:15px;
+
+}
+
+
+.next{
+
+right:15px;
+
+}
+
+/* ==========================
+TOPBAR BUTTON TABLET
+========================== */
+
+.topbar a{
+
+padding:7px 18px;
+
+font-size:13px;
+
+}
+
+/*=========================
+Title fonts
+==========================*/
+.footer-title{
+font-size:24px;
+}
 
 
 
@@ -1883,6 +1899,26 @@ gap:15px;
 
 }
 
+/* ==========================
+TOPBAR BUTTON MOBILE
+========================== */
+
+.topbar a{
+
+padding:6px 14px;
+
+font-size:11px;
+
+border-radius:20px;
+
+}
+
+/*=========================
+Title fonts
+==========================*/
+.footer-title{
+font-size:20px;
+}
 
 }
 
