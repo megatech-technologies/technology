@@ -1,0 +1,1888 @@
+/* ==========================
+GLOBAL RESET
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+font-family:"Segoe UI",Arial,sans-serif;
+color:#333;
+background:#fff;
+line-height:1.6;
+
+}
+
+
+img{
+
+width:100%;
+display:block;
+
+}
+
+
+a{
+
+text-decoration:none;
+color:inherit;
+
+}
+
+
+button{
+
+cursor:pointer;
+border:none;
+
+}
+
+
+
+
+/* ==========================
+TOP BAR
+========================== */
+
+
+.topbar{
+
+background:#0c4b25;
+color:white;
+height:45px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+font-size:14px;
+
+}
+
+
+.topbar a{
+
+background:#f5a623;
+padding:8px 22px;
+border-radius:30px;
+font-weight:bold;
+
+}
+
+.topbar a:hover {
+    background-color: #f3db04;
+}
+
+
+
+/* ==========================
+HEADER
+========================== */
+
+
+header{
+
+height:80px;
+position:sticky;
+top:0;
+z-index:1000;
+
+background:white;
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:0 7%;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+.logo{
+
+font-size:22px;
+font-weight:bold;
+color:#087830;
+
+}
+
+
+nav{
+
+display:flex;
+gap:25px;
+
+}
+
+
+nav a{
+
+font-weight:600;
+transition:.3s;
+
+}
+
+
+nav a:hover{
+
+color:#087830;
+
+}
+
+
+
+.donate-btn,
+.btn{
+
+display:inline-block;
+padding:13px 28px;
+border-radius:30px;
+font-weight:bold;
+
+}
+
+/*=======================
+DONATE BTN HOVERS
+=======================*/
+
+.donate-btn:hover {
+    background-color: #05aa21;
+    cursor: pointer;
+}
+
+.primary:hover {
+    background-color: #05aa21;
+    cursor: pointer;
+}
+.secondary:hover {
+    background-color: #05aa21;
+    cursor: pointer;
+}
+
+
+.donate-btn,
+.primary{
+
+background:#0a7d38;
+color:white;
+
+}
+
+
+
+
+.secondary{
+
+border:2px solid white;
+color:white;
+
+}
+
+
+
+
+.hamburger{
+
+display:none;
+font-size:30px;
+cursor: pointer;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+HERO
+========================== */
+
+
+.hero{
+
+min-height:90vh;
+
+background:url("images/web.jpg")
+center/cover;
+
+position:relative;
+
+display:flex;
+align-items:flex-start;
+padding-top:60px;
+padding-bottom:10px;
+
+}
+
+
+.overlay{
+
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.55);
+
+}
+
+
+
+.hero-content{
+
+position:relative;
+z-index:2;
+
+color:white;
+width:50%;
+margin-left:8%;
+
+animation:fade 1s;
+
+}
+
+
+.hero h1{
+
+font-size:60px;
+line-height:1.1;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+margin:25px 0;
+
+}
+
+
+
+
+
+
+/* ==========================
+SECTIONS
+========================== */
+
+
+.section{
+
+padding:90px 8%;
+
+}
+
+
+.title{
+
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#145b2c;
+
+}
+
+
+
+
+
+/* ==========================
+INTRO
+========================== */
+
+
+.intro{
+
+padding:90px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+
+}
+
+
+.intro img{
+
+border-radius:30px;
+
+}
+
+
+.intro h2{
+
+font-size:45px;
+color:#145b2c;
+
+}
+
+
+
+
+
+
+/* ==========================
+STATS
+========================== */
+
+
+.stats{
+
+background:#087830;
+color:white;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+
+padding:70px 8%;
+text-align:center;
+
+}
+
+
+.stat h2{
+
+font-size:45px;
+
+}
+
+
+
+
+
+/* ==========================
+CARDS
+========================== */
+
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+
+}
+
+
+
+.card,
+.impact>div,
+.news{
+
+background:white;
+padding:30px;
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover,
+.news:hover,
+.impact>div:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+
+.card:first-letter{
+
+font-size:40px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+DONATION
+========================== */
+
+
+.donation{
+
+height:500px;
+
+background:
+linear-gradient(#0008,#0008),
+url("https://images.unsplash.com/photo-1500076656116-558758c991c1")
+center/cover;
+
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+color:white;
+
+padding:30px;
+
+}
+
+
+.donation h2{
+
+font-size:45px;
+margin-bottom:30px;
+
+}
+
+
+
+
+
+/* ==========================
+IMPACT
+========================== */
+
+
+.impact{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+text-align:center;
+
+}
+
+
+.impact h2{
+
+font-size:50px;
+color:#0a7d38;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+NEWS
+========================== */
+
+
+.news img{
+
+height:220px;
+object-fit:cover;
+border-radius:20px;
+
+}
+
+
+.news span{
+
+display:inline-block;
+background:#dff5e6;
+color:#087830;
+
+padding:5px 15px;
+border-radius:20px;
+margin-top:15px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+STORIES
+========================== */
+
+
+.stories{
+
+background:#f4faf5;
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+
+padding:80px;
+
+text-align:center;
+
+}
+
+
+
+.story{
+
+max-width:500px;
+
+}
+
+
+
+.story img{
+
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:50%;
+margin:auto;
+
+}
+
+
+
+.stories button{
+
+font-size:35px;
+background:none;
+
+}
+
+
+
+
+
+
+/* ==========================
+CONTACT
+========================== */
+
+
+/* ==========================
+CONTACT FORM DESIGN
+========================== */
+
+
+.contact{
+
+background:#eef8f0;
+
+padding:90px 8%;
+
+text-align:center;
+
+}
+
+
+
+.contact h2{
+
+font-size:42px;
+
+color:#145b2c;
+
+margin-bottom:15px;
+
+}
+
+
+
+.contact > p{
+
+max-width:650px;
+
+margin:0 auto 40px;
+
+color:#555;
+
+font-size:17px;
+
+}
+
+
+
+
+.contact form{
+
+background:white;
+
+max-width:700px;
+
+margin:auto;
+
+padding:45px;
+
+border-radius:30px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+display:grid;
+
+gap:15px;
+
+text-align:left;
+
+}
+
+
+
+
+.contact label{
+
+font-weight:700;
+
+color:#145b2c;
+
+margin-top:8px;
+
+}
+
+
+
+
+.contact input,
+.contact textarea,
+.contact select{
+
+
+width:100%;
+
+padding:16px 18px;
+
+border-radius:15px;
+
+border:1px solid #ddd;
+
+font-size:16px;
+
+font-family:inherit;
+
+outline:none;
+
+transition:.3s;
+
+background:#fafafa;
+
+}
+
+
+
+
+.contact input:focus,
+.contact textarea:focus,
+.contact select:focus{
+
+
+border-color:#087830;
+
+background:white;
+
+box-shadow:0 0 0 4px #08783022;
+
+}
+
+
+
+
+.contact textarea{
+
+resize:none;
+
+}
+
+
+
+
+.contact button{
+
+
+background:#087830;
+
+color:white;
+
+padding:16px;
+
+border-radius:30px;
+
+font-size:17px;
+
+font-weight:bold;
+
+transition:.3s;
+
+margin-top:10px;
+
+}
+
+
+
+.contact button:hover{
+
+
+background:#0c4b25;
+
+transform:translateY(-3px);
+
+}
+
+
+
+
+/* form message */
+
+#message{
+
+text-align:center;
+
+font-weight:bold;
+
+color:#087830;
+
+}
+
+/*===========================
+contact whatsapp & email styling
+============================*/
+.con {
+    padding: 4px 8px;
+    background-color: white;
+    color: green;
+    border-radius: 10px;
+    border: double;
+    font-size: 20px;
+}
+.con2 {
+    padding: 4px 8px;
+    background-color: white;
+    color: red;
+    border-radius: 10px;
+    border: double;
+    font-size: 20px;
+}
+
+.concard {
+    align-items: space-between;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+/* ==========================
+CONTACT MOBILE
+========================== */
+
+
+@media(max-width:700px){
+
+
+.contact{
+
+padding:60px 5%;
+
+}
+
+
+
+.contact h2{
+
+font-size:32px;
+
+}
+
+
+
+.contact > p{
+
+font-size:15px;
+
+}
+
+
+
+.contact form{
+
+
+padding:25px;
+
+border-radius:20px;
+
+}
+
+
+
+.contact input,
+.contact textarea,
+.contact select{
+
+font-size:15px;
+
+padding:14px;
+
+}
+
+
+.contact button{
+
+width:100%;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+FOOTER
+========================== */
+
+
+footer{
+
+background:#07351b;
+color:white;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+padding:60px 8%;
+
+}
+
+
+
+
+
+footer input{
+
+width:100%;
+
+}
+
+
+
+
+
+
+
+#top{
+
+position:fixed;
+right:25px;
+bottom:25px;
+
+background:#087830;
+color:white;
+
+width:50px;
+height:50px;
+
+border-radius:50%;
+
+display:none;
+
+}
+
+
+
+
+
+
+/* ==========================
+ANIMATION
+========================== */
+
+
+.reveal{
+
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+
+}
+
+
+.reveal.active{
+
+opacity:1;
+transform:none;
+
+}
+
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+}
+
+}
+
+/*======================
+aditional style for hero
+=======================*/
+/* ==========================
+HERO EXTRA CONTENT STYLING
+(Bullets + Subheadings)
+========================== */
+
+
+.hero-content h2,
+.hero-content h3{
+
+margin-top:25px;
+margin-bottom:15px;
+color:white;
+font-weight:700;
+
+}
+
+
+.hero-content h2{
+
+font-size:30px;
+
+}
+
+
+.hero-content h3{
+
+font-size:24px;
+
+}
+
+
+
+/* Hero bullet points */
+
+.hero-content ul{
+
+margin:25px 0;
+padding-left:0;
+
+list-style:none;
+
+display:grid;
+gap:14px;
+
+}
+
+
+
+.hero-content ul li{
+
+position:relative;
+
+padding-left:35px;
+
+font-size:17px;
+
+color:white;
+
+}
+
+
+
+/* Custom green bullet icon */
+
+.hero-content ul li::before{
+
+content:"✓";
+
+position:absolute;
+left:0;
+top:0;
+
+width:22px;
+height:22px;
+
+background:#0a7d38;
+color:white;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:14px;
+font-weight:bold;
+
+}
+
+
+
+/* Hero button spacing */
+
+.hero-content .btn{
+
+margin-top:15px;
+margin-right:10px;
+
+}
+
+/* ==========================
+FAQ TOGGLE CSS ONLY
+========================== */
+
+
+.faq-item input{
+
+display:none;
+
+}
+
+
+
+.faq-item label{
+
+width:100%;
+
+padding:25px;
+
+background:white;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+font-size:18px;
+font-weight:bold;
+
+color:#145b2c;
+
+cursor:pointer;
+
+}
+
+
+
+.faq-item label span{
+
+font-size:30px;
+color:#087830;
+
+transition:.3s;
+
+}
+
+
+
+.faq-answer{
+
+max-height:0;
+overflow:hidden;
+
+padding:0 25px;
+
+transition:.4s ease;
+
+}
+
+
+
+.faq-answer p{
+
+padding-bottom:25px;
+
+color:#555;
+
+}
+
+
+
+/* OPEN FAQ */
+
+.faq-item input:checked ~ .faq-answer{
+
+max-height:300px;
+
+}
+
+
+
+.faq-item input:checked + label span{
+
+transform:rotate(45deg);
+
+}
+
+
+/* ==========================
+CSS AUTO STORY SLIDER
+========================== */
+
+
+.stories{
+
+background:#f4faf5;
+
+padding:80px 8%;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+.stories input{
+
+display:none;
+
+}
+
+
+
+.story-container{
+
+max-width:600px;
+
+height:330px;
+
+margin:auto;
+
+position:relative;
+
+}
+
+
+
+
+
+.story{
+
+position:absolute;
+
+width:100%;
+
+opacity:0;
+
+animation:storySlide 12s infinite;
+
+}
+
+
+
+.story img{
+
+width:150px;
+
+height:150px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+margin:auto;
+
+}
+
+
+
+.story h3{
+
+margin-top:20px;
+
+font-size:25px;
+
+color:#145b2c;
+
+}
+
+
+
+.story p{
+
+font-size:18px;
+
+color:#555;
+
+}
+
+
+
+
+
+/* AUTO SLIDE TIMING */
+
+.story1{
+
+animation-delay:0s;
+
+}
+
+
+.story2{
+
+animation-delay:4s;
+
+}
+
+
+.story3{
+
+animation-delay:8s;
+
+}
+
+
+
+
+
+@keyframes storySlide{
+
+
+0%{
+
+opacity:0;
+transform:translateX(100%);
+
+}
+
+
+8%{
+
+opacity:1;
+transform:translateX(0);
+
+}
+
+
+30%{
+
+opacity:1;
+transform:translateX(0);
+
+}
+
+
+38%{
+
+opacity:0;
+transform:translateX(-100%);
+
+}
+
+
+100%{
+
+opacity:0;
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* MANUAL BUTTONS */
+
+
+.story-controls label{
+
+position:absolute;
+
+top:50%;
+
+transform:translateY(-50%);
+
+background:#087830;
+
+color:white;
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:25px;
+
+cursor:pointer;
+
+z-index:5;
+
+}
+
+
+
+.prev{
+
+left:30px;
+
+}
+
+
+
+.next{
+
+right:30px;
+
+}
+
+
+
+
+
+/* DOTS */
+
+.dots{
+
+margin-top:25px;
+
+}
+
+
+.dots label{
+
+display:inline-block;
+
+width:12px;
+
+height:12px;
+
+border-radius:50%;
+
+background:#ccc;
+
+margin:5px;
+
+cursor:pointer;
+
+}
+
+
+
+
+
+/* ==========================
+900px
+========================== */
+
+
+@media(max-width:900px){
+
+
+.story-container{
+
+height:350px;
+
+}
+
+
+.story h3{
+
+font-size:22px;
+
+}
+
+
+.story p{
+
+font-size:16px;
+
+}
+
+
+
+.story-controls label{
+
+width:40px;
+
+height:40px;
+
+font-size:20px;
+
+}
+
+
+.prev{
+
+left:15px;
+
+}
+
+
+.next{
+
+right:15px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+MOBILE
+========================== */
+
+
+@media(max-width:900px){
+
+
+nav{
+
+position:fixed;
+top:80px;
+right:-100%;
+
+background:white;
+
+width:260px;
+height:100vh;
+
+flex-direction:column;
+padding:40px;
+
+transition:.4s;
+
+box-shadow:0 0 30px #0002;
+
+}
+
+
+nav.show{
+
+right:0;
+
+}
+
+
+
+.hamburger{
+
+display:block;
+
+}
+
+
+.donate-btn{
+
+display:none;
+
+}
+
+
+
+.hero-content{
+
+width:90%;
+margin:auto;
+padding-top:20px;
+padding-bottom:40px;
+
+
+}
+
+
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+
+
+.intro{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.stats{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+
+
+.impact{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+footer{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.stories{
+
+padding:50px 20px;
+
+}
+
+
+
+/* ==========================
+MOBILE HERO CONTENT
+========================== */
+
+
+
+.hero-content{
+
+text-align:left;
+
+}
+
+
+
+.hero-content h2{
+
+font-size:24px;
+
+}
+
+
+
+.hero-content h3{
+
+font-size:20px;
+
+}
+
+
+
+.hero-content p{
+
+font-size:17px;
+
+}
+
+
+
+.hero-content ul{
+
+gap:12px;
+
+}
+
+
+
+.hero-content ul li{
+
+font-size:15px;
+padding-left:30px;
+
+}
+
+
+
+.hero-content .btn{
+
+display:inline-block;
+margin-bottom:10px;
+
+}
+
+.faq-container{
+
+width:100%;
+padding:0 10px;
+
+}
+
+
+.faq-item button{
+
+font-size:16px;
+padding:20px;
+
+text-align:left;
+
+}
+
+
+
+.faq-item button span{
+
+font-size:26px;
+
+}
+
+
+
+.faq-answer{
+
+padding:0 20px;
+
+}
+
+
+.faq-answer p{
+
+font-size:15px;
+
+}
+
+
+}
+
+/* ==========================
+CONTACT BUTTONS TABLET/MOBILE
+========================== */
+
+.con,
+.con2{
+
+font-size:17px;
+
+padding:6px 12px;
+
+display:inline-block;
+
+}
+
+
+.concard{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+
+
+
+@media(max-width:500px){
+
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+
+.hero{
+
+min-height:80vh;
+height:auto;
+padding-top:40px;
+padding-bottom:40px;
+
+}
+
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+
+.topbar{
+
+font-size:12px;
+
+}
+
+/* ==========================
+MOBILE HERO CONTENT
+========================== */
+.hero-content h2{
+
+font-size:21px;
+
+}
+
+
+.hero-content h3{
+
+font-size:18px;
+
+}
+
+
+.hero-content ul li{
+
+font-size:14px;
+
+}
+
+
+
+.hero-content .btn{
+
+width:100%;
+text-align:center;
+
+}
+/*===========
+faqs
+=================*/
+.faq-item label{
+
+font-size:15px;
+
+padding:18px;
+
+gap:15px;
+
+}
+
+
+.faq-item label span{
+
+font-size:24px;
+
+}
+
+
+.faq-answer p{
+
+font-size:14px;
+
+}
+
+/* ==========================
+stories slider
+========================== */
+
+
+
+.stories{
+
+padding:60px 5%;
+
+}
+
+
+.story-container{
+
+height:360px;
+
+}
+
+
+
+.story img{
+
+width:120px;
+
+height:120px;
+
+}
+
+
+
+.story h3{
+
+font-size:20px;
+
+}
+
+
+
+.story p{
+
+font-size:15px;
+
+}
+
+
+
+.story-controls label{
+
+width:35px;
+
+height:35px;
+
+font-size:18px;
+
+}
+
+
+/* ==========================
+CONTACT BUTTONS SMALL MOBILE
+========================== */
+
+
+.con,
+.con2{
+
+font-size:15px;
+
+padding:5px 10px;
+
+width:100%;
+
+text-align:center;
+
+}
+
+
+.concard{
+
+flex-direction:column;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+
+}
+
