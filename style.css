@@ -1718,6 +1718,15 @@ Title fonts
 font-size:24px;
 }
 
+/* ==========================
+DONATION BUTTONS MOBILE FIX
+========================== */
+.donation .btn{
+    margin:10px 5px;
+}
+
+
+
 
 
 
@@ -1918,6 +1927,17 @@ Title fonts
 ==========================*/
 .footer-title{
 font-size:20px;
+}
+
+/* ==========================
+DONATION BUTTONS MOBILE FIX
+========================== */
+
+.donation .btn{
+    display:block;
+    width:100%;
+    margin:15px 0;
+    text-align:center;
 }
 
 }
